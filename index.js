@@ -20,4 +20,9 @@ io.on('connection', function(socket) {
         // Send data to all the other clients coonected to this server
        io.sockets.emit('chat', data);
    })
+
+   socket.on('typing', function(data) {
+       console.log('Server emit typing...');
+       socket.broadcast.emit('typing', data);
+   })
 })
