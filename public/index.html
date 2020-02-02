@@ -1,9 +1,19 @@
 <html>
     <head>
         <title>Web Sockets 101</title>
-        <link href="./styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+        <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
-        <h3>Connect here..!!</h3>
+        <div id="mario-chat">
+            <h2>Web Chat</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+            </div>
+            <input id="handle" type="text" placeholder="To:" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+        </div>
+        <script src="chat.js"></script>
     </body>
 </html>
