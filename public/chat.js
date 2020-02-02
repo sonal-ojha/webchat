@@ -26,7 +26,7 @@ message.addEventListener('keypress', function() {
 
 // Listen for Events triggered from Server
 socket.on('chat', function(data) {
-    // typingFeedback.innerHTML = '';
+    typingFeedback.innerHTML = '';
     output.innerHTML = '<p><strong>' + data.to + '</strong>' + ':' + data.message + '</p>';
 })
 
